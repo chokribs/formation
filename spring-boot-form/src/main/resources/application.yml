@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: "mysql"
+# Logger configuration
+logging:
+  file.name: /logs/stage-form/formation1.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+  level:
+    org.springframework: error    
+    org.hibernate: error
+    springbootform: debug
